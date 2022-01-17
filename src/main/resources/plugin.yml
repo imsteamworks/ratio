@@ -1,5 +1,5 @@
 name: Ratio
-version: '${project.version}'
+version: ${project.version}
 main: com.steamsworld.plugins.ratio.RatioPlugin
 api-version: 1.18
 authors: [ Steamworks, Bice8687 ]

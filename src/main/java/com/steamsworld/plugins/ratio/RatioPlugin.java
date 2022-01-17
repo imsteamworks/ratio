@@ -8,6 +8,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
 
+/**
+ * This class represents the main class, the plugin.
+ */
 public final class RatioPlugin extends JavaPlugin {
 
     @Getter

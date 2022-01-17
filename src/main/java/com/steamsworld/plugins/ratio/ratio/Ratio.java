@@ -13,6 +13,8 @@ import java.util.UUID;
  * @author Steamworks (Steamworks#1127)
  * Sunday 16 2022 (10:13 PM)
  * Ratio (com.steamsworld.plugins.ratio.object)
+ *
+ * This class represents a Ratio.
  */
 @Getter
 @Setter

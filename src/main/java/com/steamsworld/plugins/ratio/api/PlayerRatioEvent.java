@@ -10,6 +10,8 @@ import org.bukkit.event.player.PlayerEvent;
  * @author Steamworks (Steamworks#1127)
  * Sunday 16 2022 (10:20 PM)
  * Ratio (com.steamsworld.plugins.ratio.api)
+ *
+ * This class represents an event called when a player is ratio'd.
  */
 @Getter
 public class PlayerRatioEvent extends PlayerEvent {

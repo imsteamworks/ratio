@@ -9,6 +9,8 @@ import java.util.List;
  * @author Steamworks (Steamworks#1127)
  * Sunday 16 2022 (10:15 PM)
  * Ratio (com.steamsworld.plugins.ratio.ratio)
+ *
+ * This class handlers all ratios.
  */
 public class RatioHandler {
 

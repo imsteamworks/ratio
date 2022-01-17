@@ -2,6 +2,7 @@ package com.steamsworld.plugins.ratio.command;
 
 import com.google.common.collect.Maps;
 import com.steamsworld.plugins.ratio.RatioPlugin;
+import com.steamsworld.plugins.ratio.api.PlayerRatioEvent;
 import com.steamsworld.plugins.ratio.ratio.Ratio;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
@@ -23,6 +24,8 @@ import java.util.stream.Collectors;
  * @author Steamworks (Steamworks#1127)
  * Sunday 16 2022 (10:25 PM)
  * Ratio (com.steamsworld.plugins.ratio.command)
+ *
+ * This is a class that represents a command that handles making and voting on ratios.
  */
 @SuppressWarnings("NullableProblems")
 public class RatioCommand implements TabExecutor {
@@ -83,12 +86,13 @@ public class RatioCommand implements TabExecutor {
 
             boolean ratiod = Boolean.parseBoolean(args[2]);
             player.sendMessage(plugin.getMessage("ratio-vote").replace("{name}", target.getName()));
+            Ratio.RatioVote vote = Ratio.RatioVote.valueOf(ratiod ? "POSITIVE" : "NEGATIVE");
             plugin.getRatioHandler().increment(
                     ratio,
                     player,
-                    Ratio.RatioVote.valueOf(ratiod ? "POSITIVE" : "NEGATIVE")
+                    vote
             );
-
+            Bukkit.getServer().getPluginManager().callEvent(new PlayerRatioEvent(player, ratio, vote));
             return true;
         }
 
