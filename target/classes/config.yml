@@ -1,0 +1,34 @@
+#     .______          ___   .___________. __    ______
+#    |   _  \        /   \  |           ||  |  /  __  \
+#    |  |_)  |      /  ^  \ `---|  |----`|  | |  |  |  |
+#    |      /      /  /_\  \    |  |     |  | |  |  |  |
+#    |  |\  \----./  _____  \   |  |     |  | |  `--'  |
+#    | _| `._____/__/     \__\  |__|     |__|  \______/
+#
+# Ratio v1.0.0 (created by Steamworks)
+
+end-after: 10 # In Seconds
+permission: # Permission Settings
+  enabled: true # If they need a permission to the command.
+  node: "ratio.permission" # The node they need to execute this command.
+
+cooldown: # Cooldown Settings
+  enabled: true  # If they should get cooldown'd after they run the command.
+  time: 10 # In Seconds, how long they should be cooldowned for.
+
+messages:
+  no-permission: "&c&l(!) &cYou do not have permission to run this command."
+  non-player: "&c&l(!) &cYou cannot use this command, you are not a player."
+  incorrect-usage: "&c&l(!) &cUsage: /ratio [vote|player name] [player name] [true | false]"
+  invalid-player: "&c&l(!) &cNo player found with the name &e'Ratio' &cfound."
+  ratio-sent: "&a&l(!) &aYou have broadcast a public ratio towards &e'{name}'&a!"
+  ratio-header: "&7[&a&lR&b&lA&c&lT&d&lI&f&lO&7] &7{player} is currently being ratio'd!"
+  no-voters: "&7[&a&lR&b&lA&c&lT&d&lI&f&lO&7] &7{player} was not ratio'd, no-one voted!"
+  successfully-ratiod: "&7[&a&lR&b&lA&c&lT&d&lI&f&lO&7] &7{player} was ratio'd by &e{players} &7in total!"
+  failed-ratiod: "&7[&a&lR&b&lA&c&lT&d&lI&f&lO&7] &7{player} was not ratio'd, &e{players} &7voted for a ratio!"
+  ratio-vote: "&a&l(!) &aYou have voted against the ratio case of &e'{name}'&a!"
+  pending-ratio: "&c&l(!) &cYou already have an pending ratio."
+  no-ratio: "&c&l(!) &cThere is no pending ratio against this player."
+  already-voted: "&c&l(!) &cYou already voted for this ratio!"
+  target-exists: "&c&l(!) &cThis player already has a pending ratio against them!"
+  cooldown: "&c&l(!) &cYou are currently on cooldown for another {time}!"

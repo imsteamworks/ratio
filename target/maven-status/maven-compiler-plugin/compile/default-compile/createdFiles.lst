@@ -1,0 +1,7 @@
+com\steamsworld\plugins\ratio\ratio\RatioHandler$1.class
+com\steamsworld\plugins\ratio\ratio\RatioHandler.class
+com\steamsworld\plugins\ratio\api\PlayerRatioEvent.class
+com\steamsworld\plugins\ratio\ratio\Ratio$RatioVote.class
+com\steamsworld\plugins\ratio\RatioPlugin.class
+com\steamsworld\plugins\ratio\command\RatioCommand.class
+com\steamsworld\plugins\ratio\ratio\Ratio.class

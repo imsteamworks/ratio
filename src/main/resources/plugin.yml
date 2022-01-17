@@ -1,0 +1,10 @@
+name: Ratio
+version: '${project.version}'
+main: com.steamsworld.plugins.ratio.RatioPlugin
+api-version: 1.18
+authors: [ Steamworks, Bice8687 ]
+description: Ratio fellow players!
+website: steamsworld.com
+commands:
+  ratio:
+    description: The main command for the Ratio plugin.
